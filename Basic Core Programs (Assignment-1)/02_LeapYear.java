@@ -1,3 +1,8 @@
+// 2. Leap Year
+// a. I/P -> Year, ensure it is a 4 digit number.
+// b. Logic -> Determine if it is a Leap Year.
+// c. O/P -> Print the year is a Leap Year or not.
+
 import java.util.*;
 
 public class LeapYear {
@@ -22,9 +27,9 @@ public class LeapYear {
         String yearString = Integer.toString(year);
 
         // Validate if it is 4 digits
-        if (yearString.length() != 4) {
-            System.out.println("Error: Year must be a 4-digit number.");
-            return;
+        while (yearString.length() != 4) {
+            System.out.print("Year must be of 4-digit, enter the year again: ");
+            year = sc.nextInt();
         }
 
         // Call function after validation
