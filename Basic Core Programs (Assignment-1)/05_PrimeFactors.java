@@ -6,7 +6,7 @@
 
 import java.util.*;
 
-public class PrimeFactors {   // Proper class name
+public class PrimeFactors {
 
     // Function to print all prime factors of a number
     public static void printPrimeFactors(int N) {
